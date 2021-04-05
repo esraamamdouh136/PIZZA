@@ -1,0 +1,50 @@
+.Student {
+  table {
+    width: 100%;
+    text-align: center;
+
+    th {
+      text-align: center;
+    }
+    td.mat-cell.cdk-cell.cdk-column-image.mat-column-image{
+      width: 26% !important;
+
+      img {
+        width: 30%;
+      }
+    }
+  
+  }
+
+ 
+
+    .mat-button.add {
+      background-color: #b9157f;
+      color: white;
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+    .delete {
+      background-color: red;
+      color: white;
+      margin-left: auto;
+    }
+
+  
+
+  .btn {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .mat-button {
+    width: 100% !important;
+  }
+
+  .btn {
+    width: 100% !important;
+  }
+
+}

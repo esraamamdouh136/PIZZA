@@ -1,0 +1,49 @@
+<div class="bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="assets/image/logo.jpg">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+       
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/image/shopping.png" class="Shopping-bag"><span class="length">{{AddCart.length}}</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="addProductOnCart">
+                    <p *ngIf="AddCart.length < 1" class="text-center">No Product Yet </p>
+                   <div *ngFor="let Cart of AddCart ; let i = index" class="p-2 row no-gutters">
+                     <div class="col-md-6 image-cart">
+                      <img src="{{Cart.image}}" class="img-fluid">
+                     </div>
+                     <div class="col-md-6 details-cart">
+                      <span class="d-block text-right close" (click)="delete(i)">x</span>
+                     <h3 class="d-block" >{{Cart.name}}</h3>
+                     <p>Lorem Ipsum is simply dummy text of the printing</p>
+                     <span class="d-block text-right">{{Cart.price}} L.E</span>
+                    </div>
+                    <hr>
+                  </div>
+                  </div>
+                   <hr>
+                   <div class="d-flex p-2">
+                    <button href="" class="btn mx-auto d-block btn-dark w-50"  [disabled]="AddCart.length < 1">Cart Page</button>
+                   </div>
+                  </div>
+                </li>
+              </ul>
+            
+            </div>
+          </nav>
+    </div>
+</div>
+
+
+

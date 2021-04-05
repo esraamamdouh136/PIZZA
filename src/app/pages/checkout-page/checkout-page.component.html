@@ -1,0 +1,20 @@
+
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">code</th>
+        <th scope="col">name</th>
+        <th scope="col">image</th>
+        <th scope="col">price</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="Checkout.length < 0">
+      <tr *ngFor="let checkout of Checkout ; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{checkout.name}}</td>
+        <td><img src="{{checkout.image}}"><td>
+        <td>{{checkout.price}}</td>
+      </tr>
+   
+    </tbody>
+  </table>

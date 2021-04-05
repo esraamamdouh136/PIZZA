@@ -1,0 +1,25 @@
+img.mat-card-image {
+    height: 200px;
+}
+
+mat-card.mat-card.mat-focus-indicator.example-card {
+    position: relative;
+}
+
+span.price {
+    position: absolute;
+    background-color: #b9157f;
+    left: 1px;
+    padding: 8px;
+    color: white;}
+
+.mat-card {
+    padding: 0px 16px 16px 16px !important;
+}
+
+button.mat-focus-indicator.mat-button.mat-button-base {
+    display: block;
+    width: 100% !IMPORTANT;
+    background: #b9237f;
+    color: white;
+}

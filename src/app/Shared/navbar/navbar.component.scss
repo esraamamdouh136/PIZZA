@@ -1,0 +1,61 @@
+a.nav-link {
+  color: white !important;
+}
+
+.bg-dark {
+  background-color: #010101 !important;
+}
+
+a.navbar-brand {
+  width: 10%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.Shopping-bag {
+  position: relative;
+}
+
+span.length {
+  position: absolute;
+  background: #ec3f94;
+  padding: 2px 5px 1px 5px;
+  border-radius: 30px;
+  font-size: 11px;
+  color: white;
+  right: -2px;
+  top: 3px;
+}
+
+.image-cart {
+  img {
+    height: 113px;
+    width: 90%;
+    border: 1px solid #e69cc9;
+    padding: 5px;
+  }
+
+}
+
+.dropdown-menu.show {
+  width: 328px !important;
+}
+
+.dropdown-menu {
+  left: -159px !important;
+}
+
+span.d-block.text-right.close {
+  border: 2px solid red;
+  padding: 3px 7px;
+  font-size: 17px;
+  border-radius: 3px;
+  color: red;
+  cursor: pointer;
+}
+
+p {
+  font-size: 14px;
+}
